@@ -1,0 +1,12 @@
+---
+apiVersion: operator.cryostat.io/v1beta1
+kind: Cryostat
+metadata:
+  name: cryostat
+  namespace: cryostat-operator-system
+spec:
+  minimal: false
+  enableCertManager: false
+  serviceOptions:
+    coreConfig:
+      serviceType: ClusterIP

@@ -1,0 +1,7 @@
+// browser console output
+Object { state: "not configured", message: "dashboard URL unconfigured" }
+Firefox can’t establish a connection to the server at ws://10.244.0.7:8181/api/v1/notifications.
+
+// browser Network
+POST http://localhost:8181/api/v2.1/auth:
+{"meta":{"type":"application/json","status":"OK"},"data":{"result":{"username":""}}}

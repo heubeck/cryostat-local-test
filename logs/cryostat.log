@@ -1,0 +1,195 @@
++------------------------------------------+
+| Thu Apr 14 18:23:58 UTC 2022             |
+|                                          |
+| /truststore is empty; no certificates to import |
++------------------------------------------+
++------------------------------------------+
+| Thu Apr 14 18:23:58 UTC 2022             |
+|                                          |
+| SSL Disabled                             |
++------------------------------------------+
++ exec java -XX:+CrashOnOutOfMemoryError -Dcom.sun.management.jmxremote.port=9091 -Dcom.sun.management.jmxremote.rmi.port=9091 -Djavax.net.ssl.trustStore=/opt/cryostat.d/truststore.p12 -Djavax.net.ssl.trustStorePassword=SgtmEEmXCqOyAup-Egt59MyOUJ7S0RDa -Dcom.sun.management.jmxremote.autodiscovery=false -Dcom.sun.management.jmxremote.authenticate=true -Dcom.sun.management.jmxremote.password.file=/tmp/jmxremote.password -Dcom.sun.management.jmxremote.access.file=/tmp/jmxremote.access -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.registry.ssl=false -cp '/app/resources:/app/classes:/app/libs/cryostat-core-2.9.0.jar:/app/libs/common-7.1.1.jar:/app/libs/encoder-1.2.2.jar:/app/libs/flightrecorder-7.1.1.jar:/app/libs/flightrecorder.rules-7.1.1.jar:/app/libs/flightrecorder.rules.jdk-7.1.1.jar:/app/libs/openshift-client-5.4.1.jar:/app/libs/openshift-model-5.4.1.jar:/app/libs/kubernetes-model-common-5.4.1.jar:/app/libs/jackson-annotations-2.11.2.jar:/app/libs/openshift-model-operator-5.4.1.jar:/app/libs/openshift-model-operatorhub-5.4.1.jar:/app/libs/openshift-model-monitoring-5.4.1.jar:/app/libs/openshift-model-console-5.4.1.jar:/app/libs/kubernetes-client-5.4.1.jar:/app/libs/kubernetes-model-core-5.4.1.jar:/app/libs/kubernetes-model-rbac-5.4.1.jar:/app/libs/kubernetes-model-admissionregistration-5.4.1.jar:/app/libs/kubernetes-model-apps-5.4.1.jar:/app/libs/kubernetes-model-autoscaling-5.4.1.jar:/app/libs/kubernetes-model-apiextensions-5.4.1.jar:/app/libs/kubernetes-model-batch-5.4.1.jar:/app/libs/kubernetes-model-certificates-5.4.1.jar:/app/libs/kubernetes-model-coordination-5.4.1.jar:/app/libs/kubernetes-model-discovery-5.4.1.jar:/app/libs/kubernetes-model-events-5.4.1.jar:/app/libs/kubernetes-model-extensions-5.4.1.jar:/app/libs/kubernetes-model-flowcontrol-5.4.1.jar:/app/libs/kubernetes-model-networking-5.4.1.jar:/app/libs/kubernetes-model-metrics-5.4.1.jar:/app/libs/kubernetes-model-policy-5.4.1.jar:/app/libs/kubernetes-model-scheduling-5.4.1.jar:/app/libs/kubernetes-model-storageclass-5.4.1.jar:/app/libs/kubernetes-model-node-5.4.1.jar:/app/libs/okhttp-3.12.12.jar:/app/libs/okio-1.15.0.jar:/app/libs/logging-interceptor-3.12.12.jar:/app/libs/slf4j-api-1.7.30.jar:/app/libs/jackson-dataformat-yaml-2.11.2.jar:/app/libs/snakeyaml-1.26.jar:/app/libs/jackson-datatype-jsr310-2.11.2.jar:/app/libs/jackson-databind-2.11.2.jar:/app/libs/jackson-core-2.11.2.jar:/app/libs/zjsonpatch-0.3.0.jar:/app/libs/generex-1.0.2.jar:/app/libs/automaton-1.11-8.jar:/app/libs/dagger-2.34.1.jar:/app/libs/javax.inject-1.jar:/app/libs/commons-lang3-3.12.0.jar:/app/libs/commons-codec-1.15.jar:/app/libs/commons-io-2.8.0.jar:/app/libs/commons-validator-1.7.jar:/app/libs/commons-beanutils-1.9.4.jar:/app/libs/commons-digester-2.1.jar:/app/libs/commons-logging-1.2.jar:/app/libs/commons-collections-3.2.2.jar:/app/libs/httpclient-4.5.13.jar:/app/libs/httpcore-4.4.13.jar:/app/libs/vertx-web-3.9.9.jar:/app/libs/vertx-web-common-3.9.9.jar:/app/libs/vertx-auth-common-3.9.9.jar:/app/libs/vertx-bridge-common-3.9.9.jar:/app/libs/vertx-core-3.9.9.jar:/app/libs/netty-common-4.1.67.Final.jar:/app/libs/netty-buffer-4.1.67.Final.jar:/app/libs/netty-transport-4.1.67.Final.jar:/app/libs/netty-handler-4.1.67.Final.jar:/app/libs/netty-codec-4.1.67.Final.jar:/app/libs/netty-handler-proxy-4.1.67.Final.jar:/app/libs/netty-codec-socks-4.1.67.Final.jar:/app/libs/netty-codec-http-4.1.67.Final.jar:/app/libs/netty-codec-http2-4.1.67.Final.jar:/app/libs/netty-resolver-4.1.67.Final.jar:/app/libs/netty-resolver-dns-4.1.67.Final.jar:/app/libs/netty-codec-dns-4.1.67.Final.jar:/app/libs/vertx-web-client-3.9.9.jar:/app/libs/vertx-web-graphql-3.9.9.jar:/app/libs/graphql-java-14.0.jar:/app/libs/antlr4-runtime-4.7.2.jar:/app/libs/java-dataloader-2.2.3.jar:/app/libs/reactive-streams-1.0.3.jar:/app/libs/graphql-java-extended-scalars-1.0.1.jar:/app/libs/nimbus-jose-jwt-9.16.1.jar:/app/libs/jcip-annotations-1.0-1.jar:/app/libs/bcprov-jdk15on-1.69.jar:/app/libs/slf4j-jdk14-1.7.30.jar:/app/libs/gson-2.8.6.jar:/app/libs/caffeine-3.0.1.jar:/app/libs/jsoup-1.14.2.jar:/opt/cryostat.d/clientlib.d/*' @/app/jib-main-class-file
+Apr 14, 2022 6:23:58 PM io.cryostat.core.log.Logger info
+INFO: cryostat started.
+Apr 14, 2022 6:23:58 PM io.cryostat.core.log.Logger info
+INFO: Selected NoSSL strategy
+Apr 14, 2022 6:23:58 PM io.cryostat.core.log.Logger warn
+WARNING: No available SSL certificates. Fallback to plain HTTP.
+Apr 14, 2022 6:23:58 PM io.cryostat.core.log.Logger info
+INFO: Local config path set as /opt/cryostat.d/conf.d
+Apr 14, 2022 6:23:59 PM io.cryostat.core.log.Logger info
+INFO: Exception thrown
+io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET at: https://10.96.0.1/apis/route.openshift.io/v1/namespaces/cryostat-operator-system/routes. Message: 404 page not found
+.
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.requestFailure(OperationSupport.java:639)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.assertResponseCode(OperationSupport.java:578)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleResponse(OperationSupport.java:543)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleResponse(OperationSupport.java:504)
+	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.handleResponse(OperationSupport.java:487)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.listRequestHelper(BaseOperation.java:163)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.list(BaseOperation.java:672)
+	at io.fabric8.kubernetes.client.dsl.base.BaseOperation.list(BaseOperation.java:86)
+	at io.cryostat.platform.internal.OpenShiftPlatformStrategy.isAvailable(OpenShiftPlatformStrategy.java:96)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:176)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:361)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:503)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at io.cryostat.platform.PlatformModule.providePlatformStrategy(PlatformModule.java:141)
+	at io.cryostat.platform.PlatformModule_ProvidePlatformStrategyFactory.providePlatformStrategy(PlatformModule_ProvidePlatformStrategyFactory.java:49)
+	at io.cryostat.platform.PlatformModule_ProvidePlatformStrategyFactory.get(PlatformModule_ProvidePlatformStrategyFactory.java:37)
+	at io.cryostat.platform.PlatformModule_ProvidePlatformStrategyFactory.get(PlatformModule_ProvidePlatformStrategyFactory.java:12)
+	at dagger.internal.DoubleCheck.get(DoubleCheck.java:47)
+	at io.cryostat.platform.PlatformModule_ProvidePlatformClientFactory.get(PlatformModule_ProvidePlatformClientFactory.java:42)
+	at io.cryostat.platform.PlatformModule_ProvidePlatformClientFactory.get(PlatformModule_ProvidePlatformClientFactory.java:12)
+	at dagger.internal.DoubleCheck.get(DoubleCheck.java:47)
+	at io.cryostat.configuration.ConfigurationModule_ProvideCredentialsManagerFactory.get(ConfigurationModule_ProvideCredentialsManagerFactory.java:53)
+	at io.cryostat.configuration.ConfigurationModule_ProvideCredentialsManagerFactory.get(ConfigurationModule_ProvideCredentialsManagerFactory.java:15)
+	at dagger.internal.DoubleCheck.get(DoubleCheck.java:47)
+	at io.cryostat.DaggerCryostat_Client.credentialsManager(DaggerCryostat_Client.java:833)
+	at io.cryostat.Cryostat.main(Cryostat.java:79)
+
+Apr 14, 2022 6:23:59 PM io.cryostat.core.log.Logger info
+INFO: Selected KubeApi Platform Strategy
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Apr 14, 2022 6:23:59 PM io.cryostat.core.log.Logger info
+INFO: Local save path for flight recordings set as /opt/cryostat.d/recordings.d
+Apr 14, 2022 6:24:00 PM io.cryostat.core.log.Logger info
+INFO: HTTP service running on http://10.244.0.7:8181
+Apr 14, 2022 6:24:00 PM io.cryostat.core.log.Logger info
+INFO: Selecting platform default AuthManager "io.cryostat.net.NoopAuthManager"
+Apr 14, 2022 6:24:00 PM io.cryostat.core.log.Logger info
+INFO: Max concurrent WebSocket connections: 2147483647
+Apr 14, 2022 6:24:21 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54160): GET /health 200 60ms
+Apr 14, 2022 6:24:22 PM io.cryostat.core.log.Logger info
+INFO: Creating connection for service:jmx:rmi:///jndi/rmi://10.244.0.7:9091/jmxrmi
+Apr 14, 2022 6:24:22 PM io.cryostat.core.log.Logger info
+INFO: Outgoing WS message: {"meta":{"category":"TargetJvmDiscovery","type":{"type":"application","subType":"json"},"serverTime":1649960662},"message":{"event":{"serviceRef":{"connectUrl":"service:jmx:rmi:///jndi/rmi://10.244.0.7:9091/jmxrmi","alias":"cryostat-6484476c6d-n5qwl","labels":{"app":"cryostat","pod-template-hash":"6484476c6d","component":"cryostat","kind":"cryostat"},"annotations":{"platform":{},"cryostat":{"HOST":"10.244.0.7","PORT":"9091","NAMESPACE":"cryostat-operator-system","POD_NAME":"cryostat-6484476c6d-n5qwl"}}},"kind":"LOST"}}}
+Apr 14, 2022 6:24:22 PM io.cryostat.core.log.Logger info
+INFO: Outgoing WS message: {"meta":{"category":"TargetJvmDiscovery","type":{"type":"application","subType":"json"},"serverTime":1649960662},"message":{"event":{"serviceRef":{"connectUrl":"service:jmx:rmi:///jndi/rmi://10.244.0.7:9091/jmxrmi","alias":"cryostat-6484476c6d-n5qwl","labels":{"app":"cryostat","pod-template-hash":"6484476c6d","component":"cryostat","kind":"cryostat"},"annotations":{"platform":{},"cryostat":{"HOST":"10.244.0.7","PORT":"9091","NAMESPACE":"cryostat-operator-system","POD_NAME":"cryostat-6484476c6d-n5qwl"}}},"kind":"FOUND"}}}
+Apr 14, 2022 6:24:23 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.5:53354): GET /api/v1/targets/10.244.0.7:9091/events 200 385ms
+Apr 14, 2022 6:24:23 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.5:53354): GET /api/v1/targets/10.244.0.7:9091/templates 200 128ms
+Apr 14, 2022 6:24:23 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.5:53356): GET /api/v1/targets/10.244.0.7:9091/events 200 32ms
+Apr 14, 2022 6:24:23 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.5:53356): GET /api/v1/targets/10.244.0.7:9091/templates 200 50ms
+Apr 14, 2022 6:24:23 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.5:53358): GET /api/v1/targets/10.244.0.7:9091/events 200 27ms
+Apr 14, 2022 6:24:23 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.5:53358): GET /api/v1/targets/10.244.0.7:9091/templates 200 45ms
+Apr 14, 2022 6:24:31 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54164): GET /health 200 3ms
+Apr 14, 2022 6:24:33 PM io.cryostat.core.log.Logger info
+INFO: Removing cached connection for 10.244.0.7:9091: EXPIRED
+Apr 14, 2022 6:24:33 PM io.cryostat.core.log.Logger info
+INFO: Connection for service:jmx:rmi:///jndi/rmi://10.244.0.7:9091/jmxrmi closed
+Apr 14, 2022 6:24:41 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54166): GET /health 200 4ms
+Apr 14, 2022 6:24:51 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54168): GET /health 200 2ms
+Apr 14, 2022 6:25:01 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54170): GET /health 200 2ms
+Apr 14, 2022 6:25:11 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54172): GET /health 200 1ms
+Apr 14, 2022 6:25:21 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54174): GET /health 200 1ms
+Apr 14, 2022 6:25:31 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54176): GET /health 200 1ms
+Apr 14, 2022 6:25:41 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54180): GET /health 200 1ms
+Apr 14, 2022 6:25:51 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54184): GET /health 200 2ms
+Apr 14, 2022 6:26:01 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54186): GET /health 200 2ms
+Apr 14, 2022 6:26:11 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54188): GET /health 200 2ms
+Apr 14, 2022 6:26:21 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54190): GET /health 200 2ms
+Apr 14, 2022 6:26:31 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54192): GET /health 200 1ms
+Apr 14, 2022 6:26:41 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54194): GET /health 200 1ms
+Apr 14, 2022 6:26:51 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54196): GET /health 200 1ms
+Apr 14, 2022 6:27:01 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54198): GET /health 200 2ms
+Apr 14, 2022 6:27:11 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54200): GET /health 200 1ms
+Apr 14, 2022 6:27:21 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54202): GET /health 200 1ms
+Apr 14, 2022 6:27:31 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54204): GET /health 200 1ms
+Apr 14, 2022 6:27:41 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54206): GET /health 200 1ms
+Apr 14, 2022 6:27:51 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54208): GET /health 200 1ms
+Apr 14, 2022 6:28:01 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54210): GET /health 200 1ms
+Apr 14, 2022 6:28:11 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54212): GET /health 200 1ms
+Apr 14, 2022 6:28:21 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54214): GET /health 200 1ms
+Apr 14, 2022 6:28:31 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54216): GET /health 200 1ms
+Apr 14, 2022 6:28:41 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54218): GET /health 200 1ms
+Apr 14, 2022 6:28:51 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54220): GET /health 200 3ms
+Apr 14, 2022 6:29:01 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54222): GET /health 200 1ms
+Apr 14, 2022 6:29:11 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54224): GET /health 200 2ms
+Apr 14, 2022 6:29:21 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54226): GET /health 200 1ms
+Apr 14, 2022 6:29:31 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54228): GET /health 200 2ms
+Apr 14, 2022 6:29:36 PM io.cryostat.core.log.Logger info
+INFO: (127.0.0.1:59260): GET /api/v1/notifications_url 200 2ms
+Apr 14, 2022 6:29:36 PM io.cryostat.core.log.Logger info
+INFO: (127.0.0.1:59266): POST /api/v2.1/auth 200 15ms
+Apr 14, 2022 6:29:36 PM io.cryostat.core.log.Logger info
+INFO: (127.0.0.1:59264): GET /health 200 17ms
+Apr 14, 2022 6:29:37 PM io.cryostat.core.log.Logger info
+INFO: (127.0.0.1:59264): POST /api/v2.1/auth 200 0ms
+Apr 14, 2022 6:29:41 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54230): GET /health 200 1ms
+Apr 14, 2022 6:29:51 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54232): GET /health 200 1ms
+Apr 14, 2022 6:30:01 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54234): GET /health 200 1ms
+Apr 14, 2022 6:30:11 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54236): GET /health 200 1ms
+Apr 14, 2022 6:30:21 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54238): GET /health 200 1ms
+Apr 14, 2022 6:30:31 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54240): GET /health 200 1ms
+Apr 14, 2022 6:30:41 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54242): GET /health 200 1ms
+Apr 14, 2022 6:30:51 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54244): GET /health 200 1ms
+Apr 14, 2022 6:31:01 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54246): GET /health 200 1ms
+Apr 14, 2022 6:31:11 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54248): GET /health 200 1ms
+Apr 14, 2022 6:31:21 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54250): GET /health 200 1ms
+Apr 14, 2022 6:31:31 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54252): GET /health 200 1ms
+Apr 14, 2022 6:31:41 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54254): GET /health 200 1ms
+Apr 14, 2022 6:31:51 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54256): GET /health 200 1ms
+Apr 14, 2022 6:32:01 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54258): GET /health 200 1ms
+Apr 14, 2022 6:32:11 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54260): GET /health 200 1ms
+Apr 14, 2022 6:32:21 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54262): GET /health 200 1ms
+Apr 14, 2022 6:32:31 PM io.cryostat.core.log.Logger info
+INFO: (10.244.0.1:54264): GET /health 200 1ms
